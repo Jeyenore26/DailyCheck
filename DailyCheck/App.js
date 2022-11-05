@@ -4,7 +4,7 @@ import Gay from './components/Gay'
 export default function App() {
   return (
     <View style={styles.container}>
-      <Gay></Gay>s
+      <Gay></Gay>
       <StatusBar style="auto" />
     </View>
   );
