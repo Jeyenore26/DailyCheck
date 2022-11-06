@@ -1,10 +1,54 @@
-import React from 'react'
-import { View, Text, StyleSheet, Button, Alert, Pressable, Image, TouchableOpacity } from 'react-native'
+import React, { useEffect, useState} from 'react'
+import { View, Text, StyleSheet, Button, Alert, Pressable, Image, TouchableOpacity, Modal } from 'react-native'
+
+
+
+
+const MoModal = ({visible, children}) => {
+    const [showModal, setshowModal] = useState(visible);
+    useEffect(()=>{
+        toggle()
+    }, [visible])
+   const toggle = ()=>{
+    if(visible)
+    {
+        setshowModal(true)
+    }
+    else{
+        setshowModal(false)
+    }
+   }
+    <Modal transparent visible={showModal}>
+        <View>
+            <Text>{children}</Text>
+        </View>
+    </Modal>
+    
+};
+
+
 
 
 export default function Budy() {
+
+    
+
+        const [visible, setvisible] = useState(false);
+          
+
+
     return (
+        
         <View style={styles.container}>
+             <MoModal visible={visible}>
+                <View>
+                    hhh
+                </View>
+             </MoModal>
+              <View>
+               
+                <Button title="dd" onPress={() => setvisible(true)}></Button>
+            </View>
             <View>
                 <View>
                     <View style={styles.LoveMaker}>
