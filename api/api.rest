@@ -1,0 +1,2 @@
+GET  http://api.airvisual.com/v2/countries?key=ffe85c06-b303-4885-83e1-cc4e31630721
+content-type: application/json
