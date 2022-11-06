@@ -1,20 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Gay from './components/Gay'
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import Nav from './components/Nav'
+import Budy from './components/Budy'
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Gay></Gay>
+
+    <View>
+      <ScrollView>
+      <Nav />
+      <Budy />
       <StatusBar style="auto" />
+      </ScrollView>
     </View>
+
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
