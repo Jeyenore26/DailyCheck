@@ -8,9 +8,9 @@ export default function App() {
 
     <View style={styles.body}>
       <ScrollView>
-      <Nav />
-      <Budy />
-      <StatusBar style="auto" />
+        <Nav />
+        <Budy />
+        <StatusBar style="auto" />
       </ScrollView>
     </View>
 
@@ -18,8 +18,8 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
- body: { 
-  backgroundColor: "#F8F9FB",
+  body: {
+    backgroundColor: "#f1dca7",
 
- }
+  }
 })

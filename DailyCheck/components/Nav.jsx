@@ -15,20 +15,20 @@ export default function Nav() {
 
 const styles = StyleSheet.create({
     container: {
-      flexDirection: 'row',
-      justifyContent: 'space-around',
-      backgroundColor: '#004CFF',
-      padding: 35,
-      borderWidth: 0.5,
-      borderBottomLeftRadius: 20,
-      borderBottomRightRadius: 20,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        backgroundColor: '#797d62',
+        padding: 35,
+        borderWidth: 0.5,
+        borderBottomLeftRadius: 20,
+        borderBottomRightRadius: 20,
 
-        
+
     },
     icon: {
         fontSize: 20,
-        color: 'white',
+        color: 'black',
         marginTop: 10,
     }
 
-  });
+});
