@@ -1,54 +1,58 @@
-import React, { useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import { View, Text, StyleSheet, Button, Alert, Pressable, Image, TouchableOpacity, Modal } from 'react-native'
 
 
 
 
-const MoModal = ({visible, children}) => {
-    const [showModal, setshowModal] = useState(visible);
-    useEffect(()=>{
-        toggle()
-    }, [visible])
-   const toggle = ()=>{
-    if(visible)
-    {
-        setshowModal(true)
-    }
-    else{
-        setshowModal(false)
-    }
-   }
-    <Modal transparent visible={showModal}>
-        <View>
-            <Text>{children}</Text>
-        </View>
-    </Modal>
-    
-};
-
 
 
 
 export default function Budy() {
+    const MoModal = ({ visible, children }) => {
 
-    
-
-        const [visible, setvisible] = useState(false);
-          
-
-
-    return (
-        
-        <View style={styles.container}>
-             <MoModal visible={visible}>
-                <View>
-                    hhh
+        const [on, seton] = useState(visible)
+        useEffect(() => {
+            toggleModalW();
+        }, [visible])
+        const toggleModalW = () => {
+            if (visible) {
+                seton(true);
+            }
+            else {
+                seton(false)
+            }
+        }
+        return <Modal transparent visible={on} animationType='slide'>
+            <View style={styles.weatherbg}>
+                <View style={styles.weathercontainer}>
+                    {children}
                 </View>
-             </MoModal>
-              <View>
-               
-                <Button title="dd" onPress={() => setvisible(true)}></Button>
             </View>
+        </Modal>
+    }
+    const [visible, setvisible] = useState(false);
+    return (
+
+        <View style={styles.container}>
+
+            <View>
+                <MoModal visible={visible}>
+                    <View style={{ alignItems: 'center' }}>
+                        <View style={styles.header}>
+                            <TouchableOpacity onPress={() => { setvisible(false) }}>
+                                <Image source={require('../assets/close.png')} style={{ width: 30, height: 30 }}></Image>
+                            </TouchableOpacity>
+                        </View>
+                    </View>
+                    <View style={{ justifyContent: 'center', alignContent: 'center', alignSelf: 'center', alignItems: 'center' }}>
+                        <Text style={{ color: 'white' }}>
+                            Egypt
+                        </Text>
+                    </View>
+                </MoModal>
+            </View>
+            <Button title="dd" onPress={() => setvisible(true)}></Button>
+
             <View>
                 <View>
                     <View style={styles.LoveMaker}>
@@ -114,6 +118,20 @@ const styles = StyleSheet.create({
     LoveMaker: {
         flexDirection: 'row',
         justifyContent: 'center',
-    }
+    },
+    weatherbg: {
+        flex: 1,
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    weathercontainer: {
+        width: "80%",
+        backgroundColor: '#bde0fe',
+        paddingHorizontal: 20,
+        paddingVertical: 30,
+        borderRadius: 20,
+        elevation: 20,
+    },
 
 })
