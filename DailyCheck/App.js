@@ -6,7 +6,7 @@ import Budy from './components/Budy'
 export default function App() {
   return (
 
-    <View>
+    <View style={styles.body}>
       <ScrollView>
       <Nav />
       <Budy />
@@ -17,4 +17,9 @@ export default function App() {
   );
 }
 
+const styles = StyleSheet.create({
+ body: { 
+  backgroundColor: "#F8F9FB",
 
+ }
+})
