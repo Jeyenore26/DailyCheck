@@ -6,7 +6,7 @@ export default function Nav() {
     return (
         <View style={styles.container}>
             <Text style={styles.icon}>icon1</Text>
-            <Text style={styles.icon}>icon2</Text>
+            <Text style={styles.icon}>DailyCheck</Text>
             <Text style={styles.icon}>icon3</Text>
         </View>
     )
@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        backgroundColor: '#797d62',
-        padding: 35,
+        backgroundColor: '#FFB703',
+        padding: "8%",
         borderWidth: 0.5,
         borderBottomLeftRadius: 20,
         borderBottomRightRadius: 20,
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     icon: {
         fontSize: 20,
         color: 'black',
-        marginTop: 10,
+        marginTop: "3%",
     }
 
 });

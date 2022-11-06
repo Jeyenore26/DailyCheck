@@ -19,7 +19,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   body: {
-    backgroundColor: "#f1dca7",
+    backgroundColor: "#FFFFFF",
 
   }
 })
