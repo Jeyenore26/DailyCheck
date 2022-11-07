@@ -26,7 +26,6 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "white",
     paddingBottom: "20%",
-    marginTop: "10%",
   },
   footer: {
     margin: "2%",

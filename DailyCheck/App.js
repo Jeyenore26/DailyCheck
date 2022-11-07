@@ -7,12 +7,10 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <View style={styles.body}>
-      <ScrollView>
-        <Nav />
-        <Budy />
-        <Footer />
-        <StatusBar style="auto" />
-      </ScrollView>
+      <Nav />
+      <Budy />
+      <Footer />
+      <StatusBar style="auto" />
     </View>
   );
 }
@@ -20,5 +18,6 @@ export default function App() {
 const styles = StyleSheet.create({
   body: {
     backgroundColor: "#80ed99",
+
   },
 });
