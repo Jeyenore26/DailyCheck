@@ -24,12 +24,11 @@ export default function Footer() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#80ed99",
+    backgroundColor: "white",
     paddingBottom: "20%",
     marginTop: "10%",
   },
   footer: {
-    color: "white",
     margin: "2%",
     fontSize: 18,
   },
