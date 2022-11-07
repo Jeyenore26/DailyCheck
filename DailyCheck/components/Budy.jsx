@@ -23,7 +23,7 @@ export default function Budy() {
   return (
     <View style={styles.container}>
       <View>
-        <Modal transparent visible={visible1} animationType="slide">
+        <Modal transparent visible={visible1} animationType="fade">
           <View style={styles.modalbg}>
             <View style={styles.modalcontainer}>
               <TouchableOpacity
@@ -39,9 +39,12 @@ export default function Budy() {
               </TouchableOpacity>
               <ScrollView>
                 <View>
-                  <Text style={styles.modaltitle}>
-                    What is plastic pollution?
-                  </Text>
+                  <View style={{ flexDirection: 'row' }}>
+                    <Text style={styles.modaltitle}>
+                      What is plastic pollution?
+                    </Text>
+                    <Image source={require('../assets/plasticpol.png')} style={{ width: 45, height: 45 }}></Image>
+                  </View>
                   <Text style={styles.modaltext}>
                     Plastic waste, or plastic pollution, is the accumulation of
                     plastic objects like plastic bottles and much more in the
@@ -78,7 +81,7 @@ export default function Budy() {
         </Modal>
       </View>
       <View>
-        <Modal transparent visible={visible2} animationType="slide">
+        <Modal transparent visible={visible2} animationType="fade">
           <View style={styles.modalbg}>
             <View style={styles.modalcontainer}>
               <TouchableOpacity
@@ -93,7 +96,10 @@ export default function Budy() {
                 ></Image>
               </TouchableOpacity>
               <ScrollView>
-                <Text style={styles.modaltitle}>What is solid waste?</Text>
+                <View style={{ flexDirection: 'row' }}>
+                  <Text style={styles.modaltitle}>What is solid waste?</Text>
+                  <Image source={require('../assets/solidwaste2.png')} style={{ width: 45, height: 45 }}></Image>
+                </View>
                 <Text style={styles.modaltext}>
                   Solid waste is the unwanted or useless solid materials
                   generated from human activities in residential, industrial or
@@ -114,7 +120,7 @@ export default function Budy() {
         </Modal>
       </View>
       <View>
-        <Modal transparent visible={visible3} animationType="slide">
+        <Modal transparent visible={visible3} animationType="fade">
           <View style={styles.modalbg}>
             <View style={styles.modalcontainer}>
               <TouchableOpacity
@@ -129,7 +135,11 @@ export default function Budy() {
                 ></Image>
               </TouchableOpacity>
               <ScrollView>
-                <Text style={styles.modaltitle}>What is E-waste?</Text>
+                <View style={{ flexDirection: 'row' }}>
+                  <Text style={styles.modaltitle}>What is E-waste?</Text>
+                  <Image source={require('../assets/Ewaste.png')} style={{ width: 45, height: 45 }}></Image>
+                </View>
+
                 <Text style={styles.modaltext}>
                   E-waste is any electrical or electronic equipment that’s been
                   discarded. This includes working and broken items that are
@@ -160,7 +170,7 @@ export default function Budy() {
         </Modal>
       </View>
       <View>
-        <Modal transparent visible={visible4} animationType="slide">
+        <Modal transparent visible={visible4} animationType="fade">
           <View style={styles.modalbg}>
             <View style={styles.modalcontainer}>
               <TouchableOpacity
@@ -175,7 +185,10 @@ export default function Budy() {
                 ></Image>
               </TouchableOpacity>
               <ScrollView>
-                <Text style={styles.modaltitle}>What are scraps?</Text>
+                <View style={{ flexDirection: 'row' }}>
+                  <Text style={styles.modaltitle}>What are scraps?</Text>
+                  <Image source={require('../assets/rcycle.png')} style={{ width: 45, height: 45 }}></Image>
+                </View>
                 <Text style={styles.modaltext}>
                   Scrap consists of recyclable materials, usually metals, left
                   over from product manufacturing and consumption, such as parts
@@ -198,7 +211,7 @@ export default function Budy() {
         </Modal>
       </View>
       <View>
-        <Modal transparent visible={visible5} animationType="slide">
+        <Modal transparent visible={visible5} animationType="fade">
           <View style={styles.modalbg}>
             <View style={styles.modalcontainer}>
               <TouchableOpacity
@@ -213,7 +226,10 @@ export default function Budy() {
                 ></Image>
               </TouchableOpacity>
               <ScrollView>
-                <Text style={styles.modaltitle}>What is paper waste?</Text>
+                <View style={{ flexDirection: 'row' }}>
+                  <Text style={styles.modaltitle}>What is paper waste?</Text>
+                  <Image source={require('../assets/paperwaste.png')} style={{ width: 45, height: 45 }}></Image>
+                </View>
                 <Text style={styles.modaltext}>
                   Paper Waste is a severe problem in many industries and
                   offices. Because of printing mistakes, junk mails, billings,
@@ -235,7 +251,7 @@ export default function Budy() {
         </Modal>
       </View>
       <View>
-        <Modal transparent visible={visible6} animationType="slide">
+        <Modal transparent visible={visible6} animationType="fade">
           <View style={styles.modalbg}>
             <View style={styles.modalcontainer}>
               <TouchableOpacity
@@ -250,7 +266,10 @@ export default function Budy() {
                 ></Image>
               </TouchableOpacity>
               <ScrollView>
-                <Text style={styles.modaltitle}>What is chemical waste?</Text>
+                <View style={{ flexDirection: 'row' }}>
+                  <Text style={styles.modaltitle}>What is chemical waste?</Text>
+                  <Image source={require('../assets/poison.png')} style={{ width: 45, height: 45 }}></Image>
+                </View>
                 <Text style={styles.modaltext}>
                   Chemical waste is any solid, liquid, or gaseous waste material
                   that, if improperly managed or disposed of, may pose
@@ -377,7 +396,7 @@ const styles = StyleSheet.create({
   },
 
   modalcontainer: {
-    backgroundColor: "#09A8B3",
+    backgroundColor: "#faf3dd",
     width: "90%",
     height: "70%",
     margin: "4%",
@@ -386,7 +405,7 @@ const styles = StyleSheet.create({
   },
 
   modaltext: {
-    color: "white",
+    color: "#427aa1",
     margin: "3%",
     fontSize: 18,
   },
