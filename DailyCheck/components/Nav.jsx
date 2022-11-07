@@ -17,11 +17,12 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     justifyContent: "center",
-    backgroundColor: "#09BD96",
+    backgroundColor: "#80ed99",
     paddingTop: "10%",
-    borderWidth: 0.5,
-    borderBottomLeftRadius: 20,
-    borderBottomRightRadius: 20,
+    borderBottomLeftRadius: 45,
+    borderBottomRightRadius: 45,
+    borderTopLeftRadius: 45,
+    borderTopRightRadius: 45,
   },
   icon: {
     fontSize: 21,

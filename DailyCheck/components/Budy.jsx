@@ -360,8 +360,9 @@ const styles = StyleSheet.create({
 
   bitBybit: {
     alignItems: "center",
-    marginTop: "12%",
-    marginBottom: "10%",
+    borderWidth: 1,
+    borderRadius: 5,
+    padding: "3%",
   },
 
   LoveMaker: {
