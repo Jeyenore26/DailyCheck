@@ -16,18 +16,21 @@ export default function Footer() {
   return (
     <View style={styles.container}>
       <View>
-        <Text style={styles.footer}>hisiadjoaasdsdj</Text>
+        <Text style={styles.footer}>I wanna jump off a cliff.</Text>
       </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {},
-  footer: {
+  container: {
     backgroundColor: "#80ed99",
+    paddingBottom: "20%",
+    marginTop: "10%",
+  },
+  footer: {
     color: "white",
-    borderTopLeftRadius: 10,
-    borderTopRightRadius: 10,
+    margin: "2%",
+    fontSize: 18,
   },
 });
