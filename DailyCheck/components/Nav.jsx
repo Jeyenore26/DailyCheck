@@ -6,7 +6,7 @@ export default function Nav() {
     <View style={styles.container}>
       <Image
         source={require("../assets/Logo.png")}
-        style={{ width: 70, height: 70 }}
+        style={{ width: 50, height: 50, marginBottom: '1.5%', justifyContent: 'center' }}
       ></Image>
       <Text style={styles.icon}>WasteWare</Text>
     </View>
@@ -17,18 +17,19 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     justifyContent: "center",
-    backgroundColor: "#80ed99",
-    paddingTop: "10%",
-    borderBottomLeftRadius: 45,
-    borderBottomRightRadius: 45,
-    borderTopLeftRadius: 45,
-    borderTopRightRadius: 45,
+    backgroundColor: "white",
+    paddingTop: "15%",
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderTopLeftRadius: 0,
+    borderTopRightRadius: 0,
   },
   icon: {
     fontSize: 21,
     color: "black",
+    justifyContent: "flex-end",
     fontWeight: "bold",
-    marginTop: "4.5%",
+    marginTop: "1.5%",
     marginRight: "10%",
   },
 });
