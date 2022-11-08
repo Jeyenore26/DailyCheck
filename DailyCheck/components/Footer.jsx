@@ -67,11 +67,15 @@ const styles = StyleSheet.create({
     height: 40,
     marginTop: "5%",
     marginLeft: "2%",
+    borderWidth: 1,
+    borderRadius: 20,
   },
   pte: {
     width: 40,
     height: 40,
     marginTop: "10%",
     marginRight: "2%",
+    borderWidth: 1,
+    borderRadius: 20,
   },
 });
