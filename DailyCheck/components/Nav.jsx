@@ -6,9 +6,13 @@ export default function Nav() {
     <View style={styles.container}>
       <Image
         source={require("../assets/Logo.png")}
-        style={{ width: 50, height: 50, marginBottom: '1.5%', justifyContent: 'center' }}
+        style={{
+          width: 50,
+          height: 50,
+          marginBottom: "1.5%",
+        }}
       ></Image>
-      <Text style={styles.icon}>WasteWare</Text>
+      <Text style={styles.name}>WasteWare</Text>
     </View>
   );
 }
@@ -24,10 +28,9 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 0,
     borderTopRightRadius: 0,
   },
-  icon: {
+  name: {
     fontSize: 21,
     color: "black",
-    justifyContent: "flex-end",
     fontWeight: "bold",
     marginTop: "1.5%",
     marginRight: "10%",
