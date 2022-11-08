@@ -447,7 +447,7 @@ export default function Budy() {
 
 const styles = StyleSheet.create({
   container: {
-    padding: "30%",
+    padding: "25%",
   },
 
   picture: {

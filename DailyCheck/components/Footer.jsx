@@ -28,7 +28,13 @@ export default function Footer() {
           ></Image>
         </TouchableOpacity>
         <Text style={styles.footer}>Donate for</Text>
-        <TouchableOpacity onPress={() => Linking.openURL("http://google.com")}>
+        <TouchableOpacity
+          onPress={() =>
+            Linking.openURL(
+              "https://uniteforchange.com/en/fund/protect-the-environment-fund/"
+            )
+          }
+        >
           <Image
             source={require("../assets/pte.jpg")}
             style={styles.pte}
@@ -45,6 +51,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 20,
     borderColor: "white",
+    padding: "5%",
   },
   footer: {
     fontSize: 20,
